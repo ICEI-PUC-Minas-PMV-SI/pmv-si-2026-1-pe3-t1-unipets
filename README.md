@@ -1,4 +1,4 @@
-# Título do Projeto
+# UniPets
 
 `CURSO: Sistemas de Informação`
 
@@ -10,16 +10,15 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* João Paulo Pimentel da Silva
+* Núbia Crhistine da Paixão Oliveira
+* Rafael Contarini Ferreira Barbosa
+* Sérgio Barbosa Marques
+* Verônica Costa Souza
 
 ## Orientador
 
-* Nome completo do professor 
+* Fábio Martins de Oliveira 
 
 # Planejamento
 
