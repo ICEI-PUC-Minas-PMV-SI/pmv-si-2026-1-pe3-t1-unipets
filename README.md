@@ -12,7 +12,6 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 * João Paulo Pimentel da Silva
 * Núbia Crhistine da Paixão Oliveira
-* Rafael Contarini Ferreira Barbosa
 * Sérgio Barbosa Marques
 * Tiago Atahualpa Hermoza Menezes 
 * Verônica Costa Souza
