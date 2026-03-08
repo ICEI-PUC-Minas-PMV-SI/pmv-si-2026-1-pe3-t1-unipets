@@ -35,7 +35,27 @@ De forma mais detalhada, pode-se dizer que o projeto tem como objetivos específ
 
 ## 1.3. Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O Brasil possui, hoje, grande volume de animais abandonados que estão em situação de rua. Segundo Gomes (2013, p. 20), “a OMS estima que existam 25 milhões de cães e 4 milhões de gatos abandonados” no país. Apesar de a pesquisa de Gomes datar do início da década passada, os números atualmente se mantêm estáveis, girando em torno de 30 milhões de animais abandonados, entre cães e gatos (AGÊNCIA BRASIL, 2025). Mas esses animais representam muito mais que simples números: por não terem nenhum tipo de controle de vacinação nem tratamento de doenças, eles podem se tornar vetores de patologias diversas e potenciais transmissores de zoonoses, representando perigo à saúde pública, além de poderem ocasionar outras adversidades:
+
+Estes animais não têm nenhum tipo de controle de vacinação e tratamento de doenças (ANDRADE, 2011), funcionando como potenciais transmissores de zoonoses como a raiva e a leishmaniose. Eles também são responsáveis pela proliferação de ectoparasitas, por agressões, acidentes de trânsito, poluição por dejetos, poluição sonora e outras perturbações (BORTOLOTI; D’AGOSTINO, 2007). Essa problemática é agravada pelo acelerado grau de reprodução de cães e gatos (BORTOLOTI; D' AGOSTINO, 2007). (GOMES, 2013, p. 20-21)
+
+Ainda segundo a mesma autora, a maior parte dos animais que acabam entregues aos Centros de Controle de Zoonoses municipais têm, por destino, a eutanásia. Muitos deles são identificados com doenças tratáveis, mas são entregues mesmo assim, porque seus respectivos tutores alegam não terem condições financeiras de arcar com o tratamento. Isso implica na definição de “guarda responsável”, considerando que esses tutores não avaliam as muitas consequências que podem incorrer do cuidado com um animal e como, no ato da adoção, deve-se ter em mente todas elas:
+
+Assim, a guarda responsável diz respeito a toda a responsabilidade que alguém deve assumir ao adotar um animal de estimação. O ato de adquirir um animal deve ser avaliado por todos os moradores da casa, pois é uma relação que pode durar de 15 (quinze) a 20 (vinte) anos. (SOUZA, 2014, p. 126)
+
+O foco, aqui, no entanto, não é julgar nem obrigar pessoas que não tenham recursos financeiros a fazerem dívidas para poderem tratar seus pets. Na verdade, busca-se criar pontes e elos entre quem precisa de ajuda e quem pode ajudar. A partir da ideia de um sistema centralizado de cadastro de pessoas, instituições e animais no âmbito da adoção, pretende-se criar uma rede de conexões saudáveis, que possam se apoiar mutuamente e, em virtude de atitudes e sentimentos de altruísmo, dignidade e benevolência, ajudar a melhorar as condições mesmas de saúde pública.
+
+As soluções para diminuir os altos índices de abandono e ajudar a resolver esse problema passam pela identificação e registro desses animais, como forma de se ter um maior controle e gestão dessas estatísticas. Trata-se, ainda, de uma questão humanitária: cuidar desses animais perpassa nossos instintos de proteção e diligência. É comovente vê-los em situação tão precária e frustrante quando se acredita não poder fazer nada a respeito.
+
+O UniPets surge, então, como uma forma de conectar os prospectivos adotantes a pessoas e instituições que possuem pets disponíveis para adoção. Formando, então, uma rede de conexão e cuidado com animais. Cria-se, portanto, um banco de dados centralizado que visa disponibilizar perfis completos com dados únicos daquele animal - sejam suas características físicas, comportamentais, dados relativos à sua saúde e histórico de vacinas e medicamentos.
+
+Importante ponto a ser ressaltado ainda seria o da identificação e registro do animal. Um registro de cães e gatos se apresenta como a melhor ferramenta para se conhecer, dimensionar e monitorar esses animais. Seria extremamente útil também para se conhecer e avaliar os proprietários, responsabilizando-os quando necessário, em casos de negligência, abandono ou ainda, danos a terceiros. Em resumo, a identificação e o registro, em tese, deve ser o primeiro passo para o efetivo controle dos animais em determinada cidade ou região (ARCA Brasil, 2010). (SOUZA, 2014, p. 126-127)
+
+Ademais, a concepção da aplicação UniPets perpassa as bases do programa ProPatinhas (Programa Nacional de Proteção e Manejo Populacional Ético de Cães e Gatos) e do sistema SinPatinhas (Sistema do Cadastro Nacional de Animais Domésticos), lançados pelo Governo Federal pela Lei nº 15.046/2024, que concebem uma base de dados nacional para o registro de animais. Funcionando como um CPF animal, o SinPatinhas garante a unicidade da matrícula de cada animal e será um grande aliado na criação de um banco de dados centralizado e eficaz para o UniPets.
+
+A aplicação aqui desenvolvida visa aproximar tais resoluções do grande público e, partindo dos princípios do Design Centrado no Usuário, atrair e suportar usuários que possam alimentar e usufruir de um banco de dados centralizado. O UniPets pretende, então, consolidar-se como uma ferramenta hábil, ética e confiável, atuando como uma facilitadora de processos de adoção responsável.
+
+
 
 ## 1.4. Público alvo
 
