@@ -1,57 +1,79 @@
-# 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
-
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
-
+# 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE    	                                                       	
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
-
+ A seguinte seção deste documento visa descrever e especificar as necessidades dos Usuários que devem ser atendidas pelo projeto UniPets – Sistema de adoção de animais de estimação.
+                                    	
 ## 3.2 Escopo do produto
-
+                                                         	
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+ A plataforma UniPets consiste em uma rede social voltada à adoção de animais e divulgação de eventos e conteúdo relacionado à criação de animais de estimação de diversos tipos. O website contém um feed centralizado que com postagens de quatro tipos, contendo texto, imagens e/ou vídeo:
+- Vagas de Voluntariado.
+- Eventos.
+- Animais disponíveis para adoção.
+- Blogs.
 
+Além disso, possui três categorias de usuários:
+- Usuário Administrador - Administrador do site e moderador do conteúdo.
+- Usuário Comum - Usuários individuais, responsáveis por popular o feed e participar de eventos.
+- Usuário Instituição - Usuários para ONGs, pet shops, casas de abrigo e etc. Possui funções exclusivas.
+ 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
-
+ O foco principal do UniPets é a promoção do bem estar animal, apoiando instituições como ONGs, casas de abrigo animal, clínicas veterinárias e pet shops. A plataforma também visa expandir a adoção de animais e promoção de conteúdo ao redor do seu cuidado.
+                                                       	
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+ A aplicação não possui integração com outras redes sociais, fator que limita o seu alcance ao público geral. O conteúdo postado também não é moderado de forma automatizada (como, por exemplo, através de listas de palavras banidas ou software de reconhecimento de imagem), sendo a sua curadoria de exclusiva responsabilidade de um administrador humano.
 
 ### 3.2.4 Benefícios do produto
-
-| # | Benefício | Valor para o Cliente |
-|--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+| Benefício                                                         | Valor |
+| ----------------------------------------------------------------- | ----- |
+| Promoção da adoção de animais                                     | Alto  |
+| Conexão entre indivíduos e comunidades locais de bem-estar animal | Alto  |
+| Apoio a iniciativas de voluntariado em casas de abrigo e ONGs     | Alto  |
+| Promoção do bem-estar animal e boas práticas de criação de pets   | Alto  |
+| Apoio a eventos recreativos sobre pets                            | Médio |
 
 ## 3.3 Descrição geral do produto
+### 3.3.1 Requisitos funcionais
+| Código | Funcionalidade                                                                       | Descrição                                                                                                                                                                                                                   |
+| ------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| RF1    | Alterar os próprios dados                                                            | Usuários do tipo Comum e Institucional podem alterar dados pessoais como localização, e-mail, número de celular e nome.                                                                                                     |
+| RF2    | Alterar dados de seus animais listados para adoção                                   | Usuários do tipo Comum e Institucional podem alterar e excluir fotos, texto, nome e formas de contato em listagens de animais para adoção.                                                                                  |
+| RF3    | Registrar Usuário Institucional através de processo especial                         | Usuário Institucional poderá ser registrado através do vínculo com um CNPJ e validação externa. As instituições terão uma página individual exclusiva, assim como a capacidade de publicar eventos e vagas de voluntariado. |
+| RF4    | Gerenciar dados de todos os usuários e postagens no feed                             | Usuário Administrador será utilizado pela gerência do site para coibir o uso abusivo da plataforma. Ele poderá alterar todos os dados publicados por outros usuários para fins de moderação.                                |
+| RF5    | Efetuar login com e-mail e senha                                                     | Usuários poderão utilizar um e-mail pessoal para criar e acessar suas contas.                                                                                                                                               |
+| RF6    | Efetuar login via OAuth com conta Google                                             | OAuth poderá ser utilizado para efetuar login sem a necessidade de criar uma senha específica para a plataforma.                                                                                                            |
+| RF7    | Trocar a própria senha                                                               | O reset de senha poderá ser feito antes de efetuar login, através de um e-mail de confirmação para a caixa de entrada do usuário.                                                                                           |
+| RF8    | Gerenciar postagens próprias no feed                                                 | Após realizar postagens, usuários poderão editar fotos e texto em suas postagens do feed.                                                                                                                                   |
+| RF9    | Pesquisar no feed por vagas de voluntariado, instituições, usuários e eventos        | A função de pesquisa será capaz de procurar simultaneamente por instituições, usuários, eventos e vagas de voluntariado.                                                                                                    |
+| RF10   | Filtrar conteúdo do feed                                                             | O filtro poderá limitar conteúdo por localização, tipo (animal, vaga, evento, usuário ou instituição) e data. Também poderá filtrar animais por cor, tamanho, raça, gênero, localização e idade.                            |
+| RF11   | Publicar vagas no feed                                                               | Usuário Institucional terá a função exclusiva de publicar vagas no feed. Estas vagas são exclusivamente voluntárias.                                                                                                        |
+| RF12   | Publicar e editar eventos no feed                                                    | Usuário Institucional terá a função exclusiva de publicar eventos no feed. Eventos poderão ser aderidos por usuários.                                                                                                       |
+| RF13   | Gerenciar página individual com conteúdo exclusivo atrelado ao Usuário Institucional | Todo Usuário Institucional terá sua própria página automaticamente adicionada ao site após criação da conta.                                                                                                                |
+| RF14   | Gerenciar página individual com conteúdo exclusivo atrelado ao Usuário Comum         | Todo Usuário Comum terá sua própria página pessoal automaticamente adicionada ao site após criação da conta.                                                                                                                |
+| RF15   | Comentar em posts do feed                                                            | Usuários do tipo Comum e Institucional podem submeter comentários em qualquer post do feed.                                                                                                                                 |
 
-### 3.3.1 Requisitos Funcionais
+### 3.3.2 Requisitos não funcionais
+| Código | Funcionalidade                                             | Descrição                                                                                                                 |
+| ------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| RNF1   | Modo de alto contraste                                     | Implementação de modo de alto contraste em todas as páginas do website.                                                   |
+| RNF2   | Compatibilidade com versões recentes de browsers populares | Compatível com Firefox ≥ v140.0 e Google Chrome ≥ v138.0.                                                                 |
+| RNF3   | Alta responsividade em diferentes dispositivos             | Responsivo em monitores, smartphones e tablets a partir de 420px de altura e 390px de largura.                            |
+| RNF4   | Alto desempenho                                            | Redirecionamentos e ações não deverão demorar mais de 2500 ms.                                                            |
+| RNF5   | Alta escalabilidade                                        | Base de dados deverá suportar mais de 1.000 usuários sem perda aparente de performance.                                   |
+| RNF6   | Tráfego encriptado                                         | Certificados TLS deverão ser utilizados na implementação do serviço.                                                      |
+| RNF7   | Adesão à LGPD                                              | Dados requisitados deverão ter um fim claro e serem bem protegidos. Banco de dados deverá implementar hashes para senhas. |
 
-| Código | Requisito Funcional (Funcionalidade) | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+### 3.3.3 Usuários
+| Ator                  | Definição                                                                                                                                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Usuário Administrador | Possui acesso completo ao sistema. Capacidade de gerir posts de todos os outros usuários e moderar conteúdo postado.                                                                                         |
+| Usuário Comum         | Usuário responsável por popular o feed, interagir com outros membros e postar animais listados para adoção.                                                                                                  |
+| Usuário Institucional | Possui a mesma definição que o Usuário Comum, mas é uma conta vinculada a uma instituição (ONG, pet shop ou clínica veterinária). Possui ações exclusivas como postagens de eventos e vagas de voluntariado. |
 
-### 3.3.2 Requisitos Não Funcionais
-
-| Código | Requisito Não Funcional (Restrição) |
-|--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
-
-### 3.3.3 Usuários 
-
-| Ator | Descrição |
-|--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+| Ator                  | Frequência de uso | Nível de instrução | Proficiência na aplicação | Proficiência em informática |
+| --------------------- | ----------------- | ------------------ | ------------------------- | --------------------------- |
+| Usuário Administrador | Diária            | Superior Completo  | Alta                      | Alta                        |
+| Usuário Comum         | Variada           | Variado            | Média                     | Variada                     |
+| Usuário Institucional | Semanal           | Variado            | Média                     | Média                       |
 
 ## 3.4 Modelagem do Sistema
 
