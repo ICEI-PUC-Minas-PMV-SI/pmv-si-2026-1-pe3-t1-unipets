@@ -56,9 +56,10 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
+O diagrama de Casos de Uso apresentado na Figura 1 a seguir detalha as funcionalidades do Sistema que estarão disponíveis e poderão ser usadas por cada tipo de usuário do UniPets. Como observado, tanto ao Usuário Comum quanto ao Usuário Institucional, cabem as funcionalidades de entrar e sair do sistema, fazer login via autenticação O-Auth (Google), alterar seus dados, alterar senha de acesso, gerenciar animais para adoção, gerenciar postagens e comentários no feed, realizar buscas, filtrar conteúdo e consultar páginas de usuários. O Usuário Institucional ainda pode registrar-se como Instituição, registro aprovado mediante validação do CNPJ, pode também publicar vagas de voluntariado e gerenciar eventos no feed. 
+Já o Usuário Administrador consegue gerenciar moderação de conteúdo e gerenciar usuários, dado que se trata de usuário com permissões elevadas de gerenciamento do Sistema.
 
-#### Figura 1: Diagrama de Casos de Uso do Sistema.
+#### Figura 1: Diagrama de Casos de Uso do Sistema UniPets.
 
 ![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
  
@@ -113,7 +114,12 @@ Pós-condições: Um professor foi inserido ou removido, seus dados foram altera
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
+O diagrama de classes representa um sistema voltado à gestão de adoção de animais, integrando funcionalidades sociais e administrativas. A classe central é Usuário, que armazena dados pessoais e permite ações como login, edição de informações, criação de comentários e interação com o sistema.
+O Feed gerencia as publicações (Posts), permitindo criar, editar, excluir e pesquisar conteúdos. Cada post contém informações como título, categoria, texto e imagem, além de estar associado a um animal e a comentários feitos por usuários. A interação entre usuários ocorre por meio da classe Comentário, enquanto a classe Evento possibilita a criação e gerenciamento de eventos relacionados à adoção, incluindo controle de participantes.
+A classe Animal concentra os dados dos animais disponíveis, incluindo características físicas e informações de saúde, como vacinas, exames e doenças. Esses dados são organizados pelo RepositorioAnimais, responsável por armazenar, buscar e transferir animais entre entidades. O sistema também define perfis específicos: Instituição, responsável pela gestão dos animais e publicações; Adotante, que representa os interessados na adoção; e Administrador, que realiza a moderação do sistema, podendo excluir conteúdos e registros.
+Assim, o diagrama evidencia a integração entre usuários, animais e publicações, com o objetivo de apoiar e organizar o processo de adoção de forma eficiente.
+
+
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
