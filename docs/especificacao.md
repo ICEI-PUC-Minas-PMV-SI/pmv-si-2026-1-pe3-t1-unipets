@@ -68,52 +68,709 @@ Já o Usuário Administrador consegue gerenciar moderação de conteúdo e geren
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+​Entrar no sistema (CSU01) 
 
-#### Gerenciar Professor (CSU01)
+​Sumário: O usuário realiza a autenticação para acessar as funcionalidades restritas da plataforma. 
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+​Ator Primário: Usuário Comum, Usuário Institucional ou Usuário Administrador. 
 
-Ator Primário: Secretária.
+​Ator Secundário: Não possui. 
 
-Ator Secundário: Coordenador.
+​Pré-condições: O usuário deve estar previamente cadastrado no sistema. 
 
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+​Fluxo Principal: 
 
-Fluxo Principal:
+1. ​O usuário acessa a interface de entrada do sistema. 
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+​2. O usuário informa o e-mail de login e a senha cadastrados. 
 
-Fluxo Alternativo (3): Inclusão
+3. ​O Sistema realiza a validação das credenciais informadas. 
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+​4. O Sistema valida as credenciais informadas. Se o usuário informou a senha incorreta, o Sistema apresenta a mensagem de erro “Senha Incorreta” e o caso de uso retorna ao passo 1; caso contrário, o caso de uso termina. 
 
-Fluxo Alternativo (3): Remoção
+​ 
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+​Fluxo Alternativo: Inclusão 
 
-Fluxo Alternativo (3): Alteração
+a) ​O usuário requisita o acesso ao sistema enviando suas credenciais. 
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
+b) ​O Sistema verifica a integridade da senha e do e-mail. 
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+​c) Se os dados estiverem corretos, o Sistema inicia a sessão do usuário. 
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+​ 
+
+​Pós-condições: O usuário acessa o sistema com as permissões correspondentes ao seu perfil (Comum, Institucional ou Administrador).​ 
+
+ -----------------------------------------------
+
+​​Alterar os próprios dados (CSU02) 
+
+​Sumário: O usuário (Comum ou Institucional) realiza a gestão (alteração e consulta) de seus dados de perfil, como localização, e-mail, celular e nome. 
+
+​Ator Primário: Usuário Comum ou Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O cadastro deve estar cadastrado e devidamente logado no sistema. 
+
+​Fluxo Principal: 
+
+1. ​O usuário requisita a gestão de seus dados cadastrais. 
+
+​2. O Sistema apresenta as operações que podem ser realizadas: alteração de dados, consulta de perfil ou troca de senha. 
+
+​3. O usuário seleciona a operação desejada: Alteração ou Consulta, ou opta por finalizar o caso de uso. 
+
+​4. Se o usuário desejar continuar com a gestão de seus dados, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina. 
+
+​ 
+
+​Fluxo Alternativo: Consulta 
+
+a) ​O usuário opta por visualizar como seu perfil aparece para os demais usuários. 
+
+​b) O Sistema apresenta a página individual do usuário (conforme RF13 ou RF14). 
+
+​ 
+
+​Fluxo Alternativo: Alteração 
+
+​a) O usuário seleciona o campo que deseja editar (Nome, E-mail, Localização ou Celular). 
+
+​b) O Sistema apresenta o formulário com os dados atuais disponíveis para edição. 
+
+​c) Após a alteração dos campos e a confirmação pelo usuário, o Sistema valida a integridade dos dados e atualiza o perfil. 
+
+​ 
+
+​Pós-condições: Os dados cadastrais do usuário foram alterados no banco de dados ou apresentados detalhadamente na tela.​ 
+
+ -----------------------------------------------
+
+​​Gerenciar animais para adoção (CSU03) 
+
+​Sumário: O usuário (Comum ou Institucional) realiza a gestão completa (inclusão, alteração, exclusão e consulta) dos animais sob sua responsabilidade listados para adoção. 
+
+​Ator Primário: Usuário Comum ou Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O usuário deve estar devidamente logado no sistema. 
+
+​Fluxo Principal: 
+
+​1. O usuário acessa a opção de “Meus Animais” em sua página individual. 
+
+​2. O Sistema apresenta as operações que podem ser realizadas: cadastrar novo animal, alterar dados de animal existente, remover animal da lista ou consultar detalhes. 
+
+​3. O usuário seleciona a operação desejada: Inclusão, Alteração, Exclusão ou Consulta, ou opta por finalizar o caso de uso. 
+
+​4. Se o usuário desejar continuar com a gestão, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina. 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+​a) O usuário requisita a inclusão de um novo pet. 
+
+​b) O Sistema apresenta o formulário solicitando: Nome, Espécie, Raça, Porte, Cor, Gênero, Idade Estimada, Localização e o registro SinPatinhas. 
+
+​c) O usuário faz o upload de fotos do animal. 
+
+​d) O Sistema valida os campos obrigatórios e publica o animal no feed. 
+
+​ 
+
+​Fluxo Alternativo: Alteração 
+
+a) ​O usuário seleciona um animal da sua lista e altera informações (ex.: status de vacinação, novas fotos ou descrição). 
+
+b) ​O Sistema atualiza os dados no banco de dados e reflete as mudanças no feed. 
+
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+a) ​O usuário seleciona um animal e requisita a remoção (ex.: em caso de adoção concluída ou erro no cadastro). 
+
+​b) O Sistema solicita confirmação e remove o animal da listagem pública. 
+
+​ 
+
+​Fluxo Alternativo: Consulta 
+
+​a) O usuário opta por visualizar a ficha completa do animal como ela aparece para os adotantes. 
+
+b) ​O Sistema apresenta a página de detalhes do pet com todas as informações técnicas e fotos. 
+
+​ 
+
+​Pós-condições: Um registro de animal foi inserido, removido, alterado ou apresentado detalhadamente na tela.​ 
+
+ -----------------------------------------------
+
+​​Registrar Usuário Institucional (CSU04) 
+
+​Sumário: O usuário realiza o cadastro especial de instituição (ONG, abrigo ou clínica) para liberação de funções exclusivas no sistema. 
+
+​Ator Primário: Usuário Institucional. 
+
+​Ator Secundário: Sistema de Validação de CNPJ. 
+
+​Pré-condições: A instituição não deve possuir cadastro prévio com o mesmo CNPJ ou e-mail. 
+
+​Fluxo Principal: 
+
+1. ​O representante da instituição acessa a opção "Cadastrar Instituição". 
+
+​2. O Sistema apresenta o formulário de cadastro especial solicitando: Nome Fantasia, Razão Social, CNPJ Endereço Físico, E-mail Institucional e Responsável. 
+
+​3. O usuário preenche os dados e solicita o registro. 
+
+4. ​O Sistema realiza a Validação Externa dos dados informados. 
+
+​5. O Sistema confirma a criação da conta e libera o acesso à Página Individual da Instituição. 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+a) ​O usuário Institucional requisita a inclusão dos dados da organização e o CNPJ. 
+
+​b) O Sistema realiza a validação externa do CNPJ e grava o registro. 
+
+​c) O Sistema libera o acesso às páginas individuais e funções de publicação.  
+
+​ 
+
+​Pós-condições: Um registro de Usuário Institucional foi inserido e validado no sistema.​ 
+
+ -----------------------------------------------
+
+​​Gerenciar moderação de conteúdo (CSU05) 
+
+​Sumário: O Usuário Administrador realiza a gestão (alteração, exclusão e consulta) de perfis de usuários e postagens no feed para fins de moderação e controle de abusos. 
+
+​Ator Primário: Usuário Administrador. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O administrador deve estar autenticado com perfil de gestão. 
+
+​Fluxo Principal: 
+
+1. ​O Usuário Administrador acessa o painel de controle ou o feed de postagens. 
+
+​2. O Sistema apresenta as operações que podem ser realizadas: alteração de conteúdo, exclusão de registros ou consulta de dados. 
+
+3. ​O Usuário Administrador seleciona a operação desejada: Alteração, Exclusão ou Consulta, ou opta por finalizar o caso de uso. 
+
+​4. Se o Usuário Administrador desejar continuar com a moderação, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina. 
+
+​ 
+
+​Fluxo Alternativo: Alteração 
+
+a) ​O Usuário Administrador seleciona uma postagem ou perfil e requisita a alteração de dados. 
+
+b) ​O Sistema apresenta os campos para edição (texto, imagens ou status do usuário). 
+
+​c) O Sistema grava a alteração e registra o log de moderação. 
+
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+​a) O Usuário Administrador seleciona uma postagem abusiva ou perfil irregular e requisita a remoção. 
+
+​b) O Sistema processa a requisição e apaga o registro da plataforma. 
+
+​ 
+
+​Fluxo Alternativo: Consulta 
+
+​a) O Usuário Administrador opta por pesquisar um usuário ou postagem específica para análise. 
+
+​b) O Sistema apresenta a listagem detalhada dos dados solicitados. 
+
+​ 
+
+​Pós-condições: O conteúdo foi alterado ou removido pelo administrador, ou os dados foram apresentados para auditoria.​ 
+
+ -----------------------------------------------
+
+​​Efetuar login via OAuth (CSU06) 
+
+​Sumário: O usuário realiza a autenticação na plataforma utilizando uma conta externa da Google, sem a necessidade de senha específica do sistema. 
+
+​Ator Primário: Usuário Comum ou Usuário Institucional. 
+
+​Ator Secundário: Provedor de Autenticação Google. 
+
+​Pré-condições: O usuário deve possuir uma conta ativa na Google. 
+
+​Fluxo Principal: 
+
+1. ​O usuário acessa a interface de entrada (Login). 
+
+​2. O Sistema apresenta a opção de autenticação via Google 
+
+​3. O usuário seleciona a operação desejada: Inclusão (Autenticação Externa) ou opta por finalizar o caso de uso. 
+
+​4. O Sistema redireciona para a validação do provedor externo. 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+a) ​O usuário requisita a conexão através de sua conta Google. 
+
+​b) O Sistema recebe a confirmação de identidade do Ator Secundário. 
+
+c) ​O Sistema vincula a identidade externa ao perfil do UniPets e inicia a sessão. 
+
+​ 
+
+​Pós-condições: O usuário é autenticado via conta externa e a sessão é iniciada.​ 
+
+ -----------------------------------------------
+
+​​Trocar a senha de acesso (CSU07) 
+
+​Sumário: O usuário solicita a redefinição de sua senha de acesso caso a tenha esquecido ou deseje alterá-la por segurança. 
+
+​Ator Primário: Usuário Comum ou Usuário Institucional. 
+
+​Ator Secundário: Sistema de e-mail (Servidor SMTP). 
+
+​Pré-condições: O e-mail informado deve estar previamente cadastrado no sistema. 
+
+​Fluxo Principal: 
+
+1. ​O usuário acessa a interface de login e seleciona a opção "Esqueci minha senha". 
+
+​2. O Sistema solicita o e-mail cadastrado. 
+
+​3. O usuário informa o e-mail e seleciona a operação desejada: Inclusão (Solicitar Reset) ou opta por finalizar o caso de uso. 
+
+​4. O Sistema valida o e-mail e envia um link de recuperação para o Ator Secundário (E-mail). 
+
+​5. O usuário acessa o link, informa a nova senha e confirma. 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+a) ​O usuário requisita o envio do código ou link de recuperação 
+
+​b) O Sistema gera uma chave de segurança temporária e dispara o e-mail. 
+
+​c) O Sistema atualiza a senha no banco de dados após a confirmação do usuário. 
+
+​ 
+
+​Pós-condições: A senha do usuário foi alterada com sucesso no sistema.​ 
+
+ -----------------------------------------------
+
+​​Gerenciar postagens no feed (CSU08) 
+
+​Sumário: O usuário realiza a gestão (alteração e exclusão) das suas postagens de animais ou anúncios feitos anteriormente no feed geral. 
+
+​Ator Primário: Usuário Comum ou Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O usuário deve estar logado e ser o autor da postagem que deseja gerenciar. 
+
+​Fluxo Principal: 
+
+1. ​O usuário acessa o feed de notícias ou sua área de "Minhas Postagens". 
+
+​2. O Sistema apresenta as opções para as postagens do próprio usuário: alterar conteúdo ou remover postagem 
+
+​3. O usuário seleciona a operação desejada: Alteração ou Exclusão, ou opta por finalizar o caso de uso. 
+
+​4. Se o usuário desejar continuar gerenciando suas postagens, o caso de uso retorna ao passo 2. 
+
+​ 
+
+​Fluxo Alternativo: Alteração 
+
+​a) O usuário seleciona uma postagem ativa e requisita a modificação do texto ou das fotos. 
+
+​b) O Sistema apresenta os campos para edição. 
+
+c) ​O Sistema grava as alterações e atualiza a exibição no feed. 
+
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+​a) O usuário seleciona uma postagem e requisita sua retirada do ar. 
+
+​b) O Sistema remove o registro da visualização pública. 
+
+​ 
+
+​Pós-condições: A postagem foi alterada ou removida conforme a solicitação do usuário.​ 
+
+ -----------------------------------------------
+
+​​Realizar busca global no sistema (CSU09) 
+
+​Sumário: O usuário realiza uma pesquisa simultânea no banco de dados para localizar instituições, outros usuários, eventos cadastrados ou vagas de voluntariado disponíveis. 
+
+​Ator Primário: Usuário Comum ou Usuário Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O sistema deve possuir registros ativos de usuários, ONGs, eventos ou vagas. 
+
+​Fluxo Principal: 
+
+​1. O usuário acessa o campo de busca global no cabeçalho ou no feed. 
+
+2. O Sistema apresenta a interface para inserção do termo de pesquisas. 
+
+3. ​O Sistema apresenta os resultados organizados por tipo de conteúdo (Usuários, ONGs, Eventos ou Vagas). 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+a) ​O usuário requisita a filtragem inserindo o nome, palavra-chave ou título do que deseja encontrar. 
+
+​b) O Sistema realiza a busca em todas as entidades relacionadas (Instituições, Usuários, Eventos e Vagas). 
+
+​c) O Sistema apresenta uma lista de resultados sugeridos conforme a relevância do termo digitado. 
+
+​ 
+
+​Pós-condições: Os resultados da busca multidimensional são apresentados na tela para o usuário.​ 
+
+ -----------------------------------------------
+
+​​Filtrar conteúdo do feed (CSU10) 
+
+​Sumário: O usuário realiza a filtragem das postagens e resultados de busca para limitar o conteúdo exibido conforme critérios específicos de interesse. 
+
+​Ator Primário: Usuário Comum ou Usuário Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: Devem existir postagens ou registros ativos no sistema. 
+
+​Fluxo Principal: 
+
+1. ​O usuário acessa a função de pesquisa ou a visualização padrão do feed. 
+
+​2. O Sistema apresenta as opções de filtro: Localização, Tipo (Animal, Vaga, Evento, Usuário ou Instituição) e Data. 
+
+​3. O usuário seleciona a operação desejada: Consulta ou opta por finalizar, 
+
+4. ​O Sistema processa os critérios e atualiza a listagem na tela. 
+
+​ 
+
+​Fluxo Alternativo: Consulta 
+
+​a) O usuário requisita a aplicação de filtros múltiplos (ex: Tipo: Animal + Raça: SRD + Localização). 
+
+​b) O Sistema valida os parâmetros e exibe apenas as postagens que atendem a todos os requisitos simultaneamente. 
+
+​ 
+
+​Pós-condições: O conteúdo do feed é limitado e apresentado conforme os filtros selecionados.​ 
+
+ -----------------------------------------------
+
+​​Publicar vagas de voluntariado (CSU11) 
+
+​Sumário: O Usuário Institucional realiza a publicação e gestão de oportunidades exclusivas para trabalho voluntário no feed do sistema. 
+
+​Ator Primário: Usuário Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O usuário deve estar logado e possuir perfil de Instituição validado. 
+
+​Fluxo Principal: 
+
+1. ​O Usuário Institucional acessa a área de publicações em seu perfil. 
+
+​2. O Sistema apresenta as opções de gestão de vagas: Inclusão, Alteração ou Exclusão. 
+
+​3. O Usuário Institucional seleciona a operação desejada ou opta por finalizar o caso de uso. 
+
+​4. Se o usuário desejar continuar com a gestão, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina. 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+​a) O Usuário Institucional requisita a inclusão de uma nova vaga voluntária. 
+
+​b) O Sistema solicita as informações da vaga e define o status como "Voluntária". 
+
+​c) O Sistema grava a postagem e a disponibiliza para visualização de todos os usuários no feed. 
+
+​ 
+
+​Fluxo Alternativo: Alteração 
+
+​a) O usuário seleciona uma vaga de sua autoria e solicita a atualização de informações. 
+
+​b) O Sistema processa a alteração e atualiza a data da postagem no feed. 
+
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+​a) O usuário seleciona uma vaga e solicita sua retirada do sistema. 
+
+​b) O Sistema remove o registro da base de dados ativa. 
+
+​ 
+
+​Pós-condições: Uma vaga voluntária foi publicada, alterada ou removida pela instituição.​ 
+
+ -----------------------------------------------
+
+​​Gerenciar eventos no feed (CSU12) 
+
+​Sumário: O Usuário Institucional realiza a gestão (inclusão, alteração e exclusão) de eventos voltados à causa animal, como feiras de adoção ou campanhas de arrecadação. 
+
+​Ator Primário: Usuário Institucional. 
+
+​Ator Secundário: Usuário Comum ou Institucional (Interessados). 
+
+​Pré-condições: O usuário deve estar logado e possuir perfil de Instituição validado. 
+
+​Fluxo Principal: 
+
+​1. O Usuário Institucional acessa a área de publicações em seu painel. 
+
+​2. O Sistema apresenta as opções de gestão de eventos: Inclusão, Alteração ou Exclusão. 
+
+​3. O Usuário Institucional seleciona a operação desejada ou opta por finalizar o caso de uso. 
+
+​4. O Sistema disponibiliza o evento para que usuários comuns e institucionais possam realizar a adesão. 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+​a) O Usuário Institucional requisita a inclusão de um novo evento no feed. 
+
+​b) O Sistema solicita: Título, Descrição, Data, Local e informações de contato. 
+
+​c) O Sistema grava o registro e habilita o botão de "Confirmar Presença/Aderir" para o público. 
+
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+​a) O usuário seleciona um evento e solicita sua retirada do sistema. 
+
+​b) O Sistema remove o registro da listagem pública. 
+
+​ 
+
+​Pós-condições: Um evento foi publicado, alterado ou removido, permitindo a interação do público interessado.​ 
+
+ -----------------------------------------------
+
+​​Consultar página da instituição (CSU13) 
+
+​Sumário: O sistema gera e apresenta uma página individual com conteúdo exclusivo para cada Instituição cadastrada, centralizando suas atividades e dados de funcionamento. 
+
+​Ator Primário: Usuário Comum ou Usuário Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: A instituição deve possuir uma conta ativa criada. 
+
+​Fluxo Principal: 
+
+​1. O usuário acessa o perfil de uma instituição através do feed, busca. 
+
+​2. O Sistema apresenta a Página Individual da Instituição 
+
+​3. O usuário seleciona a operação desejada: Consulta ou opta por finalizar o caso de uso. 
+
+​4. O Sistema exibe o conteúdo exclusivo atrelado àquela organização. 
+
+​ 
+
+​Fluxo Alternativo: Consulta 
+
+​a) O usuário requisita a visualização detalhada da página da ONG. 
+
+​b) O Sistema apresenta de forma integrada: Dados de Funcionamento, Animais Listados para Adoção, Postagens Únicas, Eventos e Vagas de Voluntariado. 
+
+​c) O Sistema permite a navegação entre as diferentes seções de conteúdo exclusivo da instituição. 
+
+​ 
+
+​Pós-condições: O conteúdo centralizado da instituição é apresentado na tela para o usuário.​ 
+
+ -----------------------------------------------
+
+​​Consultar página do usuário comum (CSU14) 
+
+​Sumário: O sistema gera e apresenta uma página individual para cada Usuário Comum, centralizando suas postagens e animais listados para adoção. 
+
+​Ator Primário: Usuário Comum ou Usuário Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O usuário deve possuir uma conta ativa cadastrada no sistema. 
+
+​Fluxo Principal: 
+
+​1. O usuário acessa o perfil de um colaborador através do feed, busca ou listagem de usuários. 
+
+​2. O Sistema apresenta a Página Individual do Usuário Comum 
+
+​3. O usuário seleciona a operação desejada: Consulta ou opta por finalizar. 
+
+​4. O Sistema exibe o conteúdo atrelado àquele perfil específico. 
+
+​ 
+
+​Fluxo Alternativo: Consulta 
+
+​a) O usuário requisita a visualização detalhada do perfil. 
+
+​b) O Sistema apresenta de forma integrada: Animais Listados para Adoção e Postagens Únicas realizadas pelo usuário. 
+
+​c) Caso o usuário logado seja o proprietário do perfil, o Sistema habilita as opções de edição 
+
+​ 
+
+​Pós-condições: Os dados e postagens do Usuário Comum são apresentados detalhadamente na tela.​ 
+
+ -----------------------------------------------
+
+​​Gerenciar comentários no feed (CSU15) 
+
+​Sumário: O usuário realiza a submissão e gestão de comentários em postagens do feed para interação com outros membros da plataforma. 
+
+​Ator Primário: Usuário Comum ou Usuário Institucional. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O usuário deve estar logado no sistema. 
+
+​Fluxo Principal: 
+
+​1. O usuário visualiza uma postagem (animal, evento ou vaga) no feed. 
+
+​2. O Sistema apresenta o campo de inserção de comentários 
+
+​3. O usuário seleciona a operação desejada: Inclusão, Exclusão ou opta por finalizar. 
+
+​4. Se o usuário desejar continuar comentando em outras postagens, o caso de uso retorna ao passo 2. 
+
+​ 
+
+​Fluxo Alternativo: Inclusão 
+
+​a) O usuário requisita a submissão de um novo comentário em uma postagem do feed. 
+
+​b) O Sistema valida o conteúdo do texto e registra a interação atrelada ao perfil do autor. 
+
+​c) O comentário torna-se visível para todos os usuários que visualizarem a postagem. 
+
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+​a) O usuário seleciona um comentário de sua autoria e solicita a remoção. 
+
+​b) O Sistema processa a exclusão e retira o texto da visualização pública. 
+
+​ 
+
+​Pós-condições: Um comentário foi inserido ou removido de uma postagem no sistema.​ 
+
+ -----------------------------------------------
+
+​​Gerenciar Usuários (CSU16) 
+
+​Sumário: O Usuário Administrador realiza a gestão (alteração, exclusão e consulta) de todos os perfis cadastrados (Comum e Institucional) para garantir a integridade da plataforma. 
+
+​Ator Primário: Usuário Administrador. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O administrador deve estar autenticado com nível de acesso superior (Proficiência Alta). 
+
+​Fluxo Principal: 
+
+​1. O Usuário Administrador acessa o módulo de Gestão de Usuários no painel administrativo. 
+
+2.​ O Sistema apresenta a listagem de todos os usuários (Comum e Institucional) e as operações: Alteração, Exclusão ou Consulta. 
+
+​3. O Usuário Administrador seleciona a operação desejada ou opta por finalizar o caso de uso. 
+
+​4. Se o Administrador desejar continuar a moderação, o caso de uso retorna ao passo 2. 
+
+​ 
+
+​Fluxo Alternativo: Alteração 
+
+​a) O Administrador seleciona um perfil e requisita a alteração de status. 
+
+​b) O Sistema atualiza as permissões do usuário e registra a modificação. 
+
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+​a) O Administrador identifica um perfil irregular ou abusivo e solicita a remoção permanente. 
+
+​b) O Sistema apaga os dados do usuário e invalida sua sessão ativa. 
+
+​ 
+
+​Fluxo Alternativo: Consulta 
+
+​a) O Administrador realiza uma busca por nome, e-mail ou CNPJ para auditar um usuário. 
+
+b) ​O Sistema apresenta o histórico de postagens, animais listados e denúncias atreladas ao perfil. 
+
+​ 
+
+​Pós-condições: O status de um usuário foi alterado, um perfil foi removido ou os dados foram consultados pelo administrador.​ 
+
+ -----------------------------------------------
+
+​​Sair do sistema (CSU17) 
+
+​Sumário: O usuário encerra sua sessão ativa na plataforma. 
+
+​Ator Primário: Usuário Comum, Usuário Institucional ou Usuário Administrador. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O usuário deve estar logado no sistema. 
+
+​Fluxo Principal: 
+
+​1. O usuário acessa a função de saída (Logout). 
+
+​2. O Sistema verifica se há processos de cadastro ou edição não finalizados. 
+
+​3. Se o usuário estiver com um processo em andamento, o Sistema apresenta a mensagem: "Você possui dados não salvos que serão perdidos, deseja sair mesmo assim?". 
+
+​4. Se o usuário confirmar a saída, o Sistema realiza o deslogue da conta; caso contrário, o caso de uso retorna ao passo 1. 
+
+​ 
+
+​Pós-condições: A sessão do usuário é encerrada e ele retorna à página pública de visitantes.
 
 ### 3.4.3 Diagrama de Classes 
 
