@@ -64,7 +64,7 @@ Já o Usuário Administrador consegue gerenciar moderação de conteúdo e geren
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema UniPets.
 
-![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
+![Image](https://github.com/user-attachments/assets/cd138a59-ed73-40be-9e90-958c0a4c8aa2)
  
 ### 3.4.2 Descrições de Casos de Uso
 
