@@ -129,16 +129,26 @@ Assim, o diagrama evidencia a integração entre usuários, animais e publicaç�
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image](https://github.com/user-attachments/assets/abc7591a-b46f-4ea2-b8f0-c116b60eb24e)
+<img width="1780" height="1198" src="https://github.com/user-attachments/assets/59e34444-aad1-460a-9f5a-72bb632738a2" />
+
 
 
 ### 3.4.4 Descrições das Classes 
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| 1	|	Usuario |	Classe responsável por guardar os dados gerais como senha, nome, telefone, endereço e localização de todos que usarem a plataforma. A partir dessa classe é possível fazer login, trocar senha, criar e gerenciar animais, comentar em publicações, pesquisar e transferir animais entre Instituicao e Adotante. |
+| 2	| Instituicao |	Classe que representa organizações cadastradas na plataforma, que podem ser ONGs, clínicas veterinárias e pet shop. Além dos dados herdados de Usuario também é possível registrar o CNPJ. Por fim, a classe Instituicao também pode adicionar, editar e remover postagens do feed e transferir a responsabilidade/propriedade de animais para outro usuário, quando um deles for adotado ou transferido para outra instituição. |
+| 3 |	Adotante |	Classe que representa pessoas físicas e armazena, além dos dados herdados de Usuario, informações como CPF, estado civil, renda, idade e profissão. Classe voltada principalmente para representar pessoas que querem adotar animais, mas também podem se voluntariar para ajudar em instituições da causa animal. Um adotante pode ter zero, um ou mais animais vinculados ao seu perfil. |
+| 4 |	Administrador |	Classe que representa perfil com permissões mais elevadas. Tem identificação única e pode excluir posts, animais e comentários de qualquer usuário. Atua como um moderador de conteúdo.|
+| 5	|	Feed |	Funciona como um blog dentro da plataforma. Os posts ficam organizados por temas e após publicados, tornam-se visíveis para todos os usuários do site. É possível adicionar, editar e excluir publicações, gerenciar comentários e criar eventos.|
+| 6 |	Post |	Classe que representa uma publicação dentro do Feed. Um post contém categoria, título, imagem, texto, dados sobre o criador e pode ter um animal relacionado. Também permite gerenciar comentários.|
+| 7 | Evento | Evento representa um tipo específico de post e pode ser usado para divulgar eventos de ONGs, clínicas veterinárias e pet shop. Além dos dados de Post, esse tipo específico também mostra data de evento, capacidade de pessoas, lista de presença e status do evento. |
+| 8 | Comentario | Essa classe guarda os comentários feitos pelos usuários em publicações. Cada comentário tem identificador único, texto e dados de quem o escreveu.|
+| 9 | RepositorioAnimais | Essa classe é um repositório central de animais ligados a um usuário. Permite realizar ações de adicionar, atualizar, excluir, transferir e pesquisar animais. Funciona como uma ponte entre o Usuario e registros de Animal. |
+| 10 | Animal | Classe que concentra as informações sobre um animal e suas principais características. Quando um animal é cadastrado, seus dados ficam gravados na plataforma: nome, raça, cor, sexo, porte, peso, idade, temperamento, descrição e situação de adoção e castração. Mostra quem é o responsável atual pelo animal: Instituicao ou Adotante. Também possui dados sobre vacinas, exames e doenças. |
+| 11 | Vacinas | Os dados sobre vacinas de cada animal ficam registrados na plataforma. O registro inclui o nome do imunizante, a data de aplicação e a data de reforço.|
+| 12 | Exames | Os dados incluem a data de cada exame, resultado salvo em PDF e quem solicitou. |
+| 13 | Doencas | Armazena o nome das doenças e a data em que cada uma foi diagnosticada. |
+
+
