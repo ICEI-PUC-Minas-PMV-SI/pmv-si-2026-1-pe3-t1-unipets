@@ -878,18 +878,20 @@ Assim, o diagrama evidencia a integração entre usuários, animais e publicaç�
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Usuario |	Classe responsável por guardar os dados gerais como senha, nome, telefone, endereço e localização de todos que usarem a plataforma. A partir dessa classe é possível fazer login, trocar senha, criar e gerenciar animais, comentar em publicações, pesquisar e transferir animais entre Instituicao e Adotante. |
-| 2	| Instituicao |	Classe que representa organizações cadastradas na plataforma, que podem ser ONGs, clínicas veterinárias e pet shop. Além dos dados herdados de Usuario também é possível registrar o CNPJ. Por fim, a classe Instituicao também pode adicionar, editar e remover postagens do feed e transferir a responsabilidade/propriedade de animais para outro usuário, quando um deles for adotado ou transferido para outra instituição. |
-| 3 |	Adotante |	Classe que representa pessoas físicas e armazena, além dos dados herdados de Usuario, informações como CPF, estado civil, renda, idade e profissão. Classe voltada principalmente para representar pessoas que querem adotar animais, mas também podem se voluntariar para ajudar em instituições da causa animal. Um adotante pode ter zero, um ou mais animais vinculados ao seu perfil. |
-| 4 |	Administrador |	Classe que representa perfil com permissões mais elevadas. Tem identificação única e pode excluir posts, animais e comentários de qualquer usuário. Atua como um moderador de conteúdo.|
-| 5	|	Feed |	Funciona como um blog dentro da plataforma. Os posts ficam organizados por temas e após publicados, tornam-se visíveis para todos os usuários do site. É possível adicionar, editar e excluir publicações, gerenciar comentários e criar eventos.|
-| 6 |	Post |	Classe que representa uma publicação dentro do Feed. Um post contém categoria, título, imagem, texto, dados sobre o criador e pode ter um animal relacionado. Também permite gerenciar comentários.|
-| 7 | Evento | Evento representa um tipo específico de post e pode ser usado para divulgar eventos de ONGs, clínicas veterinárias e pet shop. Além dos dados de Post, esse tipo específico também mostra data de evento, capacidade de pessoas, lista de presença e status do evento. |
-| 8 | Comentario | Essa classe guarda os comentários feitos pelos usuários em publicações. Cada comentário tem identificador único, texto e dados de quem o escreveu.|
-| 9 | RepositorioAnimais | Essa classe é um repositório central de animais ligados a um usuário. Permite realizar ações de adicionar, atualizar, excluir, transferir e pesquisar animais. Funciona como uma ponte entre o Usuario e registros de Animal. |
-| 10 | Animal | Classe que concentra as informações sobre um animal e suas principais características. Quando um animal é cadastrado, seus dados ficam gravados na plataforma: nome, raça, cor, sexo, porte, peso, idade, temperamento, descrição e situação de adoção e castração. Mostra quem é o responsável atual pelo animal: Instituicao ou Adotante. Também possui dados sobre vacinas, exames e doenças. |
-| 11 | Vacinas | Os dados sobre vacinas de cada animal ficam registrados na plataforma. O registro inclui o nome do imunizante, a data de aplicação e a data de reforço.|
-| 12 | Exames | Os dados incluem a data de cada exame, resultado salvo em PDF e quem solicitou. |
-| 13 | Doencas | Armazena o nome das doenças e a data em que cada uma foi diagnosticada. |
+| 1	|	Usuário |	Atuar como uma classe abstrata para registrar informações base, por exemplo, usuário, senha, telefone e localização, servindo de modelo para que as classes Adotante e Instituição herdem seus dados de acesso e identificação.  |
+| 2	| Adotante |	Registrar informações específicas de pessoas físicas interessadas em adoção, por exemplo o CPF, herdando todos os atributos e métodos de identificação da classe Usuário.  |
+| 3 |	Instituição  |	Registrar informações de entidades ou protetores, por exemplo o CNPJ, herdando os atributos da classe Usuário e possuindo métodos para gerenciar animais e postagens.  |
+| 4 |	Administrador |	Controlar a moderação técnica do sistema, herdando as capacidades da classe Instituição e possuindo autoridade para excluir conteúdos específicos e gerenciar a lista de contribuidores.|
+| 5	|	Animal |	Registrar informações relativas aos pets, por exemplo, nome, raça, peso, cor, sexo e status de adoção ou castração, além de gerenciar o histórico clínico através de listas de doenças, exames e vacinas. |
+| 6 |	Repositório de Animais  |	Gerenciar o armazenamento e a busca de animais no sistema, por exemplo, através de um dicionário de animais, e métodos para adicionar, excluir, editar e pesquisar. |
+| 7 | Vacinas  | Armazenar valores relativos à imunização do animal, por exemplo o nome da vacina, data de aplicação e data de reforço, funcionando como uma classe de dados para o histórico clínico. |
+| 8 | Exames  | Armazenar valores relativos aos procedimentos clínicos, por exemplo a data do exame e o resultado em PDF, funcionando como uma classe de dados para o histórico clínico. |
+| 9 | Doenças  | Armazenar valores relativos às patologias diagnosticadas, por exemplo o nome da doença e a data do diagnóstico, funcionando como uma classe de dados para o histórico clínico. |
+| 10 | Post  | Gerenciar conteúdos educativos e informativos, por exemplo, o título, imagem, texto, categoria e o código de identificação do post.   |
+| 11 | Feed | Gerenciar a exibição das postagens, por exemplo, o dicionário de posts e métodos para pesquisar por categoria ou localização. |
+| 12 | Comentário | Gerenciar as interações nas postagens, por exemplo, o conteúdo de texto e a identificação do criador. |
+| 13 | Evento  | Gerenciar ações coletivas, exemplo, a data do evento, capacidade de público, lista de participantes e status de atividade.  |
+| 14 | Contribuidor | Gerenciar informações de parceiros e apoiadores, por exemplo, o nome, descrição, link, foto.   |
+| 15 | Repositório de Contribuidores  | Gerenciar a lista de parceiros do ecossistema, por exemplo, a lista de contribuidores e métodos para criar ou editar novos parceiros.    |
 
 
