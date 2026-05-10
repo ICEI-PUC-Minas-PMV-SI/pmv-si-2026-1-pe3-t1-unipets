@@ -20,7 +20,7 @@ Nesta seção, serão exibidas as telas do UniPets e a explicação das funciona
 
 <img width="700" src="https://drive.google.com/uc?export=view&id=1dGUgkePJ9sErO3oQ8nP6B2WXAOfhiS8E"/>
 
-4.3.3 Tela de criar conta: semelhante à tela de login, permite que o usuário crie uma nova conta no site.
+4.3.3 Tela de criar conta: semelhante à tela de login, permite que o usuário crie uma nova conta no site. Botão de criar conta redireciona para a tela citada no próximo item 4.3.4.
 
 <img width="700" src="https://drive.google.com/uc?export=view&id=15LaOcaTDkY64xDzn2eq1i-R-Ite6RQc_"/>
 
@@ -36,14 +36,22 @@ Usuário se cadastra com CNPJ (exclusivo para ONGs):
 
 4.3.5 Tela de Animais: nessa tela estão disponíveis para consulta os animais postados por ONGs na seção "Animais disponíveis para adoção". Há também a opção "Animais encontrados" onde um usuário comum cadastrado com CPF poderá divulgar informações sobre um animal que encontrou perdido na rua e ainda a opção "Animais desaparecidos" onde o usuário poderá postar informações de contato e sobre seu animal que fugiu de casa, por exemplo. 
 
-Além disso, um usuário pode pesquisar por animais usando algum termo ou filtrar animais de acordo com suas preferências de raça, localização, porte, cor, entree outros. 
+Além disso, um usuário pode pesquisar por animais usando algum termo ou filtrar animais de acordo com suas preferências de raça, localização, porte, cor, entre outros. 
 
 <img width="700" src="https://drive.google.com/uc?export=view&id=14PZZDWqkN3PbJqdB7wrtGFHsMsmE4yN6"/>
+
+Ao clicar para ver detalhes de um animal, será exibido um modal com detalhes dele e da ONG responsa´vel por ele:
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1OEk-735wZaoTmLFBbIia-P2zl1EShtyv"/>
 
 4.3.6 Tela de ONGs: semelhante à tela de animais, mostra as ONGs que se cadastraram na plataforma e informações sobre elas, como endereço, telefone e permite ainda ver mais detalhes, como história da ONG e chave PIX para quem quiser fazer doações. No canto esquerdo, é posível ver os apoiadores, que são empresas que já fizeram alguma doação para alguma ONG ou para o projeto UniPets.
 
 <img width="700" src="https://drive.google.com/uc?export=view&id=1eEw-z3q2sJ-y4n63DgLAHvaLi7UZoTWx"/>
 
+Ao clicar para ver detalhes de uma ONG, será exibido um modal com detalhes dela e informações de contato: 
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1WNAuWE48tbvBYlZh1f24aDy4cUqO-wnn"/>
+ 
 4.3.7 Telas do Blog: tela onde são exibidos as postagens de artigos de curiosidades e sobre eventos que ONGs organizam.
 
 <img width="700" src="https://drive.google.com/uc?export=view&id=1Sat1UAy2osYaXl1yYt_SPyXYZdEJTe4z"/>
@@ -65,7 +73,7 @@ Tela de postagem de eventos:
 <img width="700" src="https://drive.google.com/uc?export=view&id=1tS5yzX66m327aFpHbrGxhRXWalhfqg3Q"/>
 <img width="700" src="https://drive.google.com/uc?export=view&id=14vfBmBXr9LgfIkhF7yKCzOKieRGvQlSV"/>
 
-4.3.9 Telas para usuário comum logado: ao logar no sistema, o usuário será redirecionado para a Home do site, mas no canto superior direito poderá clciar no icon de user e visualizar algumas opções especiais de ações.
+4.3.9 Telas para usuário comum logado: ao logar no sistema, o usuário será redirecionado para a Home do site, mas no canto superior direito poderá clicar no icon de user e visualizar algumas opções especiais de ações.
 
 Tela Home com usuário logado:
 
@@ -75,14 +83,68 @@ Drawer com opções:
 
 <img width="700" src="https://drive.google.com/uc?export=view&id=1ORbHXyZwF-U0sFpSejzPq-LCEdUoGrPX"/>
 
-Tela ao clicar na opção "Editar perfil"
+Tela ao clicar na opção "Editar perfil" no drawer: permite que usuário atualize seus dados e foto, mas não permite troca de CPF.
 
+<img width="700" src="https://drive.google.com/uc?export=view&id=1ZUGoHnhwNPR1seitHuyFo1H-1Lfqw_EI"/>
 
+Tela ao clicar na opção "Gerenciar animais" no drawer: usuário é direcionado à tela onde poderá divulgar um animal que encontrou ou um animal que perdeu. Além disso, ele pode editar ou excluir alguma postagem que já tenha feito.
 
+<img width="700" src="https://drive.google.com/uc?export=view&id=1v2LpvGnTN0mBXNvjprl3MqVPzHUjITni"/>
 
-4.3.10 Telas para ONG logada: ao logar no sistema, uma ONG verá algumas opções no menu lateral e cada uma delas irá redirecionar a ONG para uma parte com opções especiais de ações. 
+Ao clicar sobre botão "Divulgar animal" abrirá um modal com opção de preencher dados e publicar no site.
 
+<img width="700" src="https://drive.google.com/uc?export=view&id=16GDJxcIGKpTcJDEiBdtqX45kG0qcIOI8"/>
+<img width="700" src="https://drive.google.com/uc?export=view&id=1fYSaacLHr8GhXKGz3J9euHsWMIo6OUg3"/>
 
+Ao clicar sobre o botão "Gerenciar" em um animal específico, abrirá o modal de edição com opção de alterar ou excluir postagem feita anteriormente do site.
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1b50Vz8YbaRdkiXnczWfOfs5ui-5ytLxs"/>
+<img width="700" src="https://drive.google.com/uc?export=view&id=1_osw5dQPq7TCP0rU88rMOVuBIkzuNHEi"/>
+
+4.3.10 Telas para ONG logada: o fluxo de telas para usuários logado ONG é semelhante ao de um usuário comum, porém a ONG contará com mais opções no drawer, para gerenciar as postagens no blog e os animais.
+
+Drawer para usuário ONG logado:
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1eP_VeMcxhDpb5sUgLkphP1Gkdc72_4-X"/>
+
+Tela ao clicar na opção "Editar perfil" no drawer: permite que ONG atualize seus dados e foto, mas não permite troca de CNPJ.
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1bVsyqUNM35Rib3J7CfG9Y1a2Ovr_tgUa"/>
+
+Tela ao clicar na opção "Gerenciar blog" no drawer: levará usuário ONG para nova tela onde haverá opção de criar uma nova pubicação (um artigo sobre curiosidades ou um evento) e editar/excluir postagens feitas anteriormente no site.
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1EgOpf2iLZV-Jjudr2p3wWwy3DHTk2dRJ"/>
+
+Ao clicar sobre o botão "Criar nova publicação" abrirá modal com opções para o usuário escrever novo artigo ou promover novo evento.
+Para publicar artigo:
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1QsWXRPgyhsF0CdJfA4T3eD_SUlD77Ot5"/>
+
+Para divulgar evento: 
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=12Iil_JFFda99-NeiiMrQ68_Mk7v2QnaF"/>
+
+Ao clicar sobre um evento em específico, no botão de "Editar", o usuário verá o modal de edição para aquela categoria de postagem em específico: curiosidades ou eventos. Ele poderá fazer alterações ou excluir o post dentro do modal.
+
+Editar artigo:
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1kkyanfvymNE13mW9JBNNTPx2ORi6x9ts"/>
+
+Editar evento:
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1RdZneOoCMGbclyMzlYlm7udI20HyoKWZ"/>
+
+Voltando ao drawer, se o usuário clicar na opção "Gerenciar animais" será redirecionado para a página abaixo, onde terá uma visão ampla de animais já publicados e poderá divulgar novos animais:
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1O80d-HPqL0yOiFCurFwY14cuckcz3b4z"/>
+
+Ao clicar sobre botão "Divulgar animal" abrirá um modal com opção de preencher dados e publicar no site.
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=10FdF-MX4BkfUzTWd1yCaGod-z7gmc7rV"/>
+
+Ao clicar sobre o botão "Gerenciar" em um animal específico, abrirá o modal de edição com opção de alterar ou excluir postagem feita anteriormente do site.
+
+<img width="700" src="https://drive.google.com/uc?export=view&id=1ipFY2Eonqd4d-H1FEKn8rw1C-ckbfCnM"/>
 
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
