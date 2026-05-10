@@ -808,7 +808,7 @@ Assim, o diagrama evidencia a integração entre usuários, animais e publicaç�
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-<img width="1780" height="1198" src="https://github.com/user-attachments/assets/59e34444-aad1-460a-9f5a-72bb632738a2" />
+<img width="2227" height="1231" alt="dawd" src="https://github.com/user-attachments/assets/e42b09f1-9d6d-4523-a3b2-7d569c60b48e" />
 
 
 
