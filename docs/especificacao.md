@@ -52,8 +52,8 @@ Além disso, possui três categorias de usuários:
 | RF14   | Gerenciar página Usuário Comum.         | Todo Usuário Comum terá sua própria página pessoal automaticamente adicionada ao site após a criação de conta. A página irá conter informações como animais listados e postagens únicas ao usuário.                                                                                                                |
 | RF15   |Gerenciar parceiros.                                                            | Permitir que o administrador realize o cadastro, edição, consulta e exclusão de parceiros e contribuidores no sistema.                                                                                                                                 |
 | RF16   |Comentar em posts.                                                           | Usuários do tipo Comum e Institucional podem submeter comentários em qualquer post do feed.                                                                                                                                 |
-| RF17   |Login.                                                            | Processamento de login de usuário cadastrado através da validação de credenciais de acesso.                                                                                                                                  |
-| RF18   |Logout.                                                            | Processamento de saída do usuário do sistema e encerramento da sessão ativa.                                                                                                                                 |
+| RF17   |Entrar no sistema.                                                            | Processamento de login de usuário cadastrado através da validação de credenciais de acesso.                                                                                                                                  |
+| RF18   |Sair do sistema.                                                            | Processamento de saída do usuário do sistema e encerramento da sessão ativa.                                                                                                                                 |
 
 ### 3.3.2 Requisitos não funcionais
 | Código | Funcionalidade                                             | Descrição                                                                                                                 |
@@ -85,12 +85,12 @@ Além disso, possui três categorias de usuários:
 
 O diagrama de Casos de Uso apresentado na Figura 1 a seguir detalha as funcionalidades do Sistema que estarão disponíveis e poderão ser usadas por cada tipo de usuário do UniPets. Como observado, tanto ao Usuário Comum quanto ao Usuário Institucional, cabem as funcionalidades de entrar e sair do sistema, fazer login via autenticação O-Auth (Google), alterar seus dados, alterar senha de acesso, gerenciar animais para adoção, gerenciar postagens e comentários no feed, realizar buscas, filtrar conteúdo e consultar páginas de usuários. O Usuário Institucional ainda pode registrar-se como Instituição, registro aprovado mediante validação do CNPJ, pode também publicar vagas de voluntariado e gerenciar eventos no feed. 
 
-Já o Usuário Administrador consegue gerenciar moderação de conteúdo e gerenciar usuários, dado que se trata de usuário com permissões elevadas de gerenciamento do Sistema.
+Já o Usuário Administrador consegue gerenciar moderação de conteúdo, de usuários e de parceiros dado que se trata de usuário com permissões elevadas de gerenciamento do Sistema.
 
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema UniPets.
 
-![Image](https://github.com/user-attachments/assets/cd138a59-ed73-40be-9e90-958c0a4c8aa2)
+<img width="705" height="907" alt="Image" src="https://github.com/user-attachments/assets/2814fd0c-3a49-4856-8a27-837c7a53792f" />
  
 ### 3.4.2 Descrições de Casos de Uso
 
@@ -130,7 +130,7 @@ b) ​O Sistema verifica a integridade da senha e do e-mail.
 
  -----------------------------------------------
 
-​​Alterar os próprios dados (CSU02) 
+​Gerenciar os próprios dados (CSU02) 
 
 ​Sumário: O usuário (Comum ou Institucional) realiza a gestão (alteração e consulta) de seus dados de perfil, como localização, e-mail, celular e nome. 
 
@@ -774,7 +774,64 @@ b) ​O Sistema apresenta o histórico de postagens, animais listados e denúnci
 
  -----------------------------------------------
 
-​​Sair do sistema (CSU17) 
+​Gerenciar Parceiros (CSU17) 
+
+​Sumário:  O sistema permite que o administrador realize a manutenção completa dos dados dos parceiros e contribuidores (ONGs, empresas parceiras ou apoiadores), incluindo o cadastro de novos nomes, edição de informações existentes, consulta e exclusão.  
+
+​Ator Primário: Usuário Administrador. 
+
+​Ator Secundário: Não possui. 
+
+​Pré-condições: O administrador deve estar autenticado no sistema (ter realizado o login com sucesso). 
+
+​Fluxo Principal: 
+
+​1. O Administrador acessa a área de gestão de parceiros no painel administrativo. 
+
+2.​ O sistema exibe a lista de parceiros atualmente cadastrados (obtida do RepositorioContribuidores)  
+
+​3. O Administrador solicita a criação de um novo parceiro.  
+
+​4. O Administrador insere os dados do parceiro (Nome, Descrição, Link, Foto e Banner).
+
+5. O sistema valida os dados e confirma o salvamento. 
+
+6. O sistema atualiza a lista exibida e encerra a operação.
+
+​ 
+
+​Fluxo Alternativo: Edição 
+
+​a) No passo 2 do fluxo principal, o Administrador seleciona um parceiro já cadastrado. 
+
+​b) O Administrador solicita a alteração dos dados. 
+
+c) O sistema exibe os campos preenchidos para edição.
+
+d) O Administrador altera as informações e confirma.
+
+e) O sistema valida, atualiza os dados e retorna ao passo 6 do fluxo principal.
+​ 
+
+​Fluxo Alternativo: Exclusão 
+
+a) O Administrador seleciona um parceiro já cadastrado. 
+
+​b) O Administrador solicita a exclusão do registro. 
+
+c) O sistema solicita uma confirmação da operação. 
+
+d) O Administrador confirma a exclusão.
+
+e) O sistema remove o registro do repositório e retorna ao passo 6 do fluxo principal. 
+
+​  
+
+​Pós-condições:O repositório de parceiros é atualizado e as novas informações ficam disponíveis para visualização no sistema. ​ 
+
+ -----------------------------------------------
+
+​​Sair do sistema (CSU18) 
 
 ​Sumário: O usuário encerra sua sessão ativa na plataforma. 
 
