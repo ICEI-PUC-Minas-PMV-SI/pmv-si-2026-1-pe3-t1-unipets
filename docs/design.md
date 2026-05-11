@@ -20,8 +20,28 @@
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/35f13470-0b14-49e2-8537-76e842340077" />
 
 
+
 ## 4.2 Mapa de Empatia
-Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
+### Mapa de empatia 1 - Adotante - Liberato Souza
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/a140b3e5-1cd7-4709-9868-068d30436e81" />
+
+### Mapa de empatia 2 - Voluntária - Julia Freitas
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/5a6826f8-680c-406f-843f-b45822709b3c" />
+
+### Mapa de empatia 3 - Gestora de ONG - Edna Lima
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/82a792b7-280f-4271-843a-6fa18dcd3bf4" />
+
+### Mapa de empatia 4 - Dona de pet e consumidora de conteúdo - Bruna Gonçalves
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/bdc5a4b8-a4b2-45e5-92e5-34a1e07a1e36" />
+
+### Mapa de empatia 5 - Adotante - Alan Kotchergenko
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/97a6fcf8-0a97-4d45-a644-e2c9a25ed6cc" />
+
+### Mapa de empatia 6 - Produtora de conteúdo e dona de pet - Luiza Silveira
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/a934b2d0-b949-48a2-b1f5-f8596e45460c" />
+
+
+
 
 ## 4.3 Protótipos das Interfaces
 Nesta seção, serão exibidas as telas do UniPets e a explicação das funcionalidades encontradas em cada uma delas. Para melhor exibição de todo o conteúdo das páginas, algumas telas apresentarão várias imagens, em sequência, detalhando melhor o que será exibido para o usuário.
