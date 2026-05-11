@@ -1,7 +1,24 @@
 # 4. PROJETO DO DESIGN DE INTERAÇÃO
 
 ## 4.1 Personas
-Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Para mais informações sobre personas consulte: https://www.rdstation.com/blog/marketing/persona-o-que-e/. Sugere-se a utilização de um template do Canva: https://www.canva.com/pt_br/modelos/s/persona/
+### Persona 1 - Adotante - Liberato Souza
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/df2922b0-59a9-4379-b057-80633449c626" />
+
+### Persona 2 - Voluntária - Julia Freitas
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/1e8d5970-2857-4ed0-bd0f-48c5f7f29372" />
+
+### Persona 3 - Gestora de ONG - Edna Lima
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/f15de09d-9f6c-4d05-a52c-f18634c82662" />
+
+### Persona 4 - Dona de pet e consumidora de conteúdo - Bruna Gonçalves
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/fd1de8d3-8d86-4337-aac2-2313d36690a4" />
+
+### Persona 5 - Adotante - Alan Kotchergenko
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/f6e52c5a-0093-4cad-9952-00897be4cb97" />
+
+### Persona 6 - Produtora de conteúdo e dona de pet - Luiza Silveira
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/35f13470-0b14-49e2-8537-76e842340077" />
+
 
 ## 4.2 Mapa de Empatia
 Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
