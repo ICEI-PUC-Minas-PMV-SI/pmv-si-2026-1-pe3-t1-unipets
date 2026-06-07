@@ -14,7 +14,7 @@ Material de apoio para esta etapa:
 
 [Relatório_de_Testes_com_Usuário_exemplo.docx](https://github.com/user-attachments/files/16501459/Relatorio_de_Testes_com_Usuario_exemplo.docx)
 
-# Relatório de Teste com Usuário
+# Relatórios de Testes com Usuários
 
 **Projeto:** UniPets
 
