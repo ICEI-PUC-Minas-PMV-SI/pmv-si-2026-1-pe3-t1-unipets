@@ -363,6 +363,161 @@ A experiência de ter um profissional da área testando e apontando acertos e fa
 
 ---
 
+## Testes com o usuário 3
+
+**Nome do Avaliador:** Sérgio Barbosa Marques
+
+**Data:** 06/06/2026
+
+### Questões Introdutórias
+
+**Apresente de forma geral o que é o sistema para o usuário. Pergunte: "Você já ouviu falar desse tipo de sistema?"**
+
+> "Sim"
+
+*Caso sim, diga-me o que você sabe sobre.*
+
+> "Já vi alguns sites de adoção de animais outros de ONGs, mas nunca um que reunisse tudo em um único lugar."
+
+
+
+**Apresente a tela inicial do sistema para o usuário. Pergunte: "Apenas olhando para esse sistema, que tipo de informação você acha que poderia obter dele? Por favor, seja específico".**
+
+> "Parece ser uma plataforma onde posso procurar animais para adoção e apoiar ONGs."
+
+
+
+**Pergunte: "Para quem você acha que esse sistema foi desenvolvido? Por quê?" (Por exemplo: cidadão, profissionais da saúde, etc.)**
+
+> "Acredito que foi desenvolvido para pessoas interessadas em fomentar a adoção de animais. Aparenta dar exposição a ONGs locais e ter uma plataforma própria de adoção."
+
+
+
+**Pergunte: "Quem você acha que é o responsável por esse sistema?" (Por exemplo: empresa, empreendedor, marca, etc)**
+
+> "Imagino que foi implementado por uma ONG ou um pequeno grupo de voluntários. Aparenta ter uma motivação exclusivamente social."
+
+
+
+## Cenário
+
+Você está em busca de uma plataforma centralizada que lhe permita procurar animais para adotar e/ou compartilhar animais que tenha encontrado perdidos na rua para que encontrem seus respectivos donos.
+
+### Tarefa 1 — Cadastro no sistema
+
+É a sua primeira vez usando o sistema, é preciso cadastrar-se. Acesse esse menu e preencha os campos para realizar seu cadastro.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Acessar "Criar conta"; preencher formulário; concluir cadastro. |
+| **Sucesso na execução** | ⚠️ **1 — Completou com dificuldade ou ajuda** |
+| **Anotações / Observações** | O participante encontrou o cadastro rapidamente, mas teve dificuldade em preencher campos como endereço por conta da falta de formatação automática, lista completa de UFs e lista de municípios. Além disso, houve dificuldade em incluir a data de nascimento, pelo fato da formatação forçar a inserção de apenas os dois últimos digitos do ano de nascimento.  |
+
+### Tarefa 2 — Login na plataforma
+
+Faça login na plataforma usando o e-mail cadastrado.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Log in'; preencher os campos 'E-mail' e 'senha'; clicar em 'Log in'; acessar a página inicial da conta. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | Tarefa completada com sucesso. Área de login foi localizada rapidamente e não houveram dúvidas por parte do usuário. |
+
+
+
+### Tarefa 3 — Busca por animal para adoção
+
+Busque por um animal que queira adotar; use os filtros da plataforma para realizar sua busca.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Animais'; buscar por termo geral como "Gato" ou "Cachorro"; filtrar um tipo de raça; filtrar a localização; filtrar por porte; filtrar a cor da pelagem. |
+| **Sucesso na execução** | ⚠️ **1 — Completou com dificuldade ou ajuda** |
+| **Anotações / Observações** | O usuário conseguiu utilizar os filtros e procurar um animal com sucesso, mas ficou visualmente confuso a respeito de opção "Peso" que não foi muito intuitiva. Não ficou claro se o slider "Peso" é o peso mínimo ou máximo.|
+
+
+
+### Tarefa 4 — Acesso à página de uma ONG próxima
+
+Acesse a página de uma ONG que esteja mais próxima da sua localização.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'ONGs'; filtrar por localização; acessar a página da ONG mais próxima. |
+| **Sucesso na execução** | ❌ **0 — Não completou** |
+| **Anotações / Observações** | A opção de acesso a ONG mais próxima não foi implementada. |
+
+
+
+### Tarefa 5 — Cadastro de animal perdido
+
+Imagine que você encontrou um animal perdido e quer divulgar para encontrar os donos. Faça o cadastro desse animal para divulgá-lo na plataforma.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Clicar sobre o ícone do perfil, abrindo o menu drawer; clicar em 'Gerenciar animais'; clicar em 'Divulgar animal'; preencher os dados; clicar em 'Publicar'. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | Tarefa realizada com sucesso |
+
+## Questionário Final
+
+**Qual foi a sua impressão geral do sistema?**
+
+> "A impressão foi bastante positiva. O sistema é organizado e transmite claramente sua proposta."
+
+
+
+**Qual foi a sua impressão sobre as atividades propostas?**
+
+> "As tarefas representam situações reais de uso e ajudam a entender bem o propósito do site."
+
+
+
+**Você acha que este sistema é atual? Por quê?**
+
+> "Sim. Além de abordar um tema relevante, a plataforma utiliza uma estrutura moderna e semelhante a outros websites que frequento."
+
+
+
+**O que você mais gostou neste sistema?**
+
+> "Gostei da centralização das informações sobre adoção, ONGs e conteúdo informativo em um único ambiente. É um aspecto raro neste tipo de plataforma."
+
+
+
+**O que você menos gostou neste sistema?**
+
+> "Alguns filtros poderiam estar mais evidentes e bem projetados, tanto de um ponto de vista estético quanto funcional. O exemplo principal é o slider "Peso", que ficou bem confuso."
+
+
+
+**Há alguma coisa que você acha que está faltando neste sistema? (Por exemplo: conteúdo, funções, etc.)**
+
+> "Seria interessante incluir um sistema de favoritos para salvar ONGs de interesse, além de notificações sobre atividades no site."
+
+
+
+**Se você fosse descrever este sistema para um colega em uma sentença ou duas, o que você diria?**
+
+> "Uma plataforma simples de adoção de animais e com conteúdo relevante, gerada por pessoas e ONGs, sobre bem-estar animal."
+
+
+
+**Você gostaria de fazer algum comentário final ou pergunta?**
+
+> "A proposta é muito interessante e tem potencial para ajudar tanto os animais quanto as pessoas interessadas em adotá-los. Penso que hoje em dia, incentivar a adoção é o melhor jeito de promover o bem-estar animal."
+
+
+
+## Conclusões do Avaliador
+
+
+O participante compreendeu rapidamente a proposta do UniPets e conseguiu executar a maior parte das tarefas sem necessidade de auxílio. Os fluxos de navegação principais mostraram-se intuitivos, especialmente nas funcionalidades de login, busca de informações e divulgação de animais. As principais dificuldades observadas estiveram relacionadas ao preenchimento do formulário de cadastro e à interpretação de alguns filtros de busca, em especial o filtro de peso, que gerou dúvidas quanto ao seu funcionamento. Também foi identificada a ausência da funcionalidade de localização de ONGs próximas, o que impossibilitou a conclusão da Tarefa 4.
+
+De forma geral, o participante avaliou positivamente a plataforma, destacando como principal diferencial a centralização de informações sobre adoção, ONGs e conteúdo relacionado ao bem-estar animal em um único ambiente. Como sugestões de melhoria, foram mencionadas funcionalidades como sistema de favoritos, notificações e aprimoramentos em alguns elementos da interface.
+
+Os resultados indicam que o UniPets possui boa usabilidade e atende adequadamente aos objetivos propostos, embora ainda existam oportunidades de melhoria relacionadas à experiência do usuário.
+---
 
 ## Testes com o usuário 4
 
