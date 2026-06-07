@@ -25,6 +25,7 @@ Material de apoio para esta etapa:
 | **9** | **Ajude os usuários a reconhecer, diagnosticar e recuperar de erros** | As mensagens de erro devem ser expressas em linguagem simples (sem códigos), indicar com precisão o problema e sugerir construtivamente uma solução. | 1) O sistema não demanda verificação de dados no preenchimento de formulário.| 1) O sistema deve ser capaz de verificar a formatação dos dados preenchidos nos formulários de criar/editar perfil, postagem e conteúdo, este último, no caso de perfis de instituições. |
 | **10** | **Ajuda e documentação** | Mesmo que seja melhor se o sistema puder ser usado sem documentação, pode ser necessário fornecer ajuda e documentação. Essas informações devem ser fáceis de pesquisar, focadas na tarefa do usuário, listar etapas concretas a serem executadas e não serem muito grandes. | 1) Os campos do formulário do menu ‘Criar animal’, num primeiro momento, aparecem como preenchidos com dados prontos, mesmo que sejam apenas exemplos sugeridos. | 1) Dados preenchidos como exemplo, devem vir precedidos por “Ex:” e serem apresentados em um cinza mais claro, indicando que o campo, na verdade, aguarda preenchimento efetivo dos respectivos dados. |
 
+**Referência:** “10 Heurísticas de usabilidade para o design de interface do usuário” -  por Jakob Nielsen em 24 de abril de 1994 | https://www.nngroup.com/articles/ten-usability-heuristics/
 
 
 
