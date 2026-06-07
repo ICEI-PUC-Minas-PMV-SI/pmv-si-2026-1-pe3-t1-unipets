@@ -43,6 +43,163 @@ Material de apoio para esta etapa:
 ## Proposta
 A proposta dos testes é verificar o entendimento e a usabilidade do projeto desenvolvido a partir das interações de um usuário representativo do público-alvo. O teste também avalia a satisfação geral do uso pelo usuário. Abaixo serão apresentados os relatórios de testes individuais feitos com diferentes perfis de usuário, sendo cada um acompanhado por um dos integrantes da equipe.
 
+
+
+## Testes com o usuário 1
+
+**Nome do Avaliador:** João Paulo Pimentel da Silva
+
+**Data:** 06/06/2026
+
+### Questões Introdutórias
+
+**Apresente de forma geral o que é o sistema para o usuário. Pergunte: "Você já ouviu falar desse tipo de sistema?"**
+
+> "Não."
+
+
+
+**Apresente a tela inicial do sistema para o usuário. Pergunte: "Apenas olhando para esse sistema, que tipo de informação você acha que poderia obter dele? Por favor, seja específico".**
+
+> "Eu acho que, através do sistema, é possível conhecer ONGs que são ligadas à adoção de animais; também acho que seja possível olhar e escolher animais para adoção e os lugares onde encontrar esses animais."
+
+
+
+**Pergunte: "Para quem você acha que esse sistema foi desenvolvido? Por quê?" (Por exemplo: cidadão, profissionais da saúde, etc.)**
+
+> "Acredito que o sistema foi feito para quem quer adotar um animal ou colocar um para adoção."
+
+
+
+**Pergunte: "Quem você acha que é o responsável por esse sistema?" (Por exemplo: empresa, empreendedor, marca, etc)**
+
+> "Provavelmente uma instituição filantrópica."
+
+
+
+## Cenário
+
+Você está em busca de uma plataforma centralizada que lhe permita procurar animais para adotar e/ou compartilhar animais que tenha encontrado perdidos na rua para que encontrem seus respectivos donos.
+
+
+### Tarefa 1 — Cadastro no sistema
+
+É a sua primeira vez usando o sistema, é preciso cadastrar-se. Acesse esse menu e preencha os campos para realizar seu cadastro.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Criar conta'; preencher e-mail válido e senha; completar dados pessoais; clicar em criar conta. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | O usuário apresentou facilidade em realizar o cadastro, porém relatou que alguns elementos da interface estavam desconfigurados. |
+
+
+
+### Tarefa 2 — Login na plataforma
+
+Faça login na plataforma usando o e-mail cadastrado.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Log in'; preencher os campos 'E-mail' e 'senha'; clicar em 'Log in'; acessar a página inicial da conta. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | O usuário realizou o login sem nenhuma dificuldade. |
+
+
+
+### Tarefa 3 — Busca por animal para adoção
+
+Busque por um animal que queira adotar; use os filtros da plataforma para realizar sua busca.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Animais'; buscar por termo geral como "Gato" ou "Cachorro"; filtrar um tipo de raça; filtrar a localização; filtrar por porte; filtrar a cor da pelagem. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | O usuário realizou a tarefa sem nenhuma complicação, porém considerou a interface dos filtros pouco atrativa. |
+
+
+
+### Tarefa 4 — Acesso à página de uma ONG próxima
+
+Acesse a página de uma ONG que esteja mais próxima da sua localização.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'ONGs'; filtrar por localização; acessar a página da ONG mais próxima. |
+| **Sucesso na execução** | ❌ **0 — Não completou** |
+| **Anotações / Observações** | O usuário não conseguiu completar a tarefa pois o sistema não estava totalmente implementado no momento. |
+
+
+
+### Tarefa 5 — Cadastro de animal perdido
+
+Imagine que você encontrou um animalzinho perdido e quer divulgar para encontrar os donos. Faça o cadastro desse animal para divulgá-lo na plataforma.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Clicar sobre o ícone do perfil, abrindo o menu drawer; clicar em 'Gerenciar animais'; clicar em 'Divulgar animal'; preencher os dados; clicar em 'Publicar'. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | O usuário conseguiu publicar o animal perdido sem problemas. |
+
+
+
+## Questionário Final
+
+**Qual foi a sua impressão geral do sistema?**
+
+> "Gostei muito do visual do sistema, muito minimalista, simplificado e objetivo."
+
+
+
+**Qual foi a sua impressão sobre as atividades propostas?**
+
+> "Acho que todas as atividades serviram para mostrar as principais funções do site, mas acho que seria interessante ter uma atividade envolvendo fazer um comentário em um post."
+
+
+
+**Você acha que este sistema é atual? Por quê?**
+
+> "Sim, um site de adoção de animais nunca deixa de ser atual, e a interface é moderna."
+
+
+
+**O que você mais gostou neste sistema?**
+
+> "A função de cadastro de animais, pois é a tela mais visualmente agradável."
+
+
+
+**O que você menos gostou neste sistema?**
+
+> "O layout da página post não está muito legal, poderia ser melhor estruturado."
+
+
+
+**Há alguma coisa que você acha que está faltando neste sistema? (Por exemplo: conteúdo, funções, etc.)**
+
+> "Acho que seria interessante ter a opção de filtrar os animais e os posts pela região."
+
+
+
+**Se você fosse descrever este sistema para um colega em uma sentença ou duas, o que você diria?**
+
+> "Um site para cadastro e adoção de animais."
+
+
+
+**Você gostaria de fazer algum comentário final ou pergunta?**
+
+> "A tela do blog terá mais opções de filtros?" — A resposta foi: "Sim, pretendemos fazer uma subtela de filtros para o blog assim como os animais."
+
+
+
+## Conclusões do Avaliador
+
+O participante entrevistado é um estudante universitário de 20 anos, com experiência e familiaridade com tecnologias digitais e desenvolvimento de sistemas web.
+
+As observações e sugestões apresentadas contribuíram para a identificação de melhorias importantes, que serão consideradas tanto na correção de problemas encontrados quanto na implementação de novas funcionalidades que poderão beneficiar os demais usuários da plataforma.
+
+De modo geral, os resultados obtidos demonstram que o sistema atende a boa parte dos requisitos propostos, mas ainda demanda ajustes visuais e aperfeiçoamentos dos sistemas antes de sua implantação definitiva.
+
 ---
 
 ## Testes com o usuário 2
