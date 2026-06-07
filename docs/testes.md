@@ -363,6 +363,159 @@ A experiência de ter um profissional da área testando e apontando acertos e fa
 
 ---
 
+
+## Testes com o usuário 4
+
+**Nome do Avaliador:** Tiago Atahualpa Hermoza Menezes 
+
+**Data:** 06/06/2026
+
+### Questões Introdutórias
+
+**Apresente de forma geral o que é o sistema para o usuário. Pergunte: "Você já ouviu falar desse tipo de sistema?"**
+
+> "Não."
+
+
+
+**Apresente a tela inicial do sistema para o usuário. Pergunte: "Apenas olhando para esse sistema, que tipo de informação você acha que poderia obter dele? Por favor, seja específico".**
+
+> “A informação que obtenho é uma que a página pertence a uma ONG que tem parceria com outras ONGs, para resgatar e colocar animais para adoção. Uma página que faz intermediação do resgate de animais até sua acolhida para a adoção.” 
+
+
+
+**Pergunte: "Para quem você acha que esse sistema foi desenvolvido? Por quê?" (Por exemplo: cidadão, profissionais da saúde, etc.)**
+
+> “Este site me parece que foi desenvolvido para instituições que se ocupam com o bem-estar de animais vítimas de descaso e abandono. Essas instituições podem ser filantrópicas, ONGs, clínicas veterinárias que acolhem, cuidam e protegem animais em situações de vulnerabilidade, abandono e violência.”
+
+
+
+**Pergunte: "Quem você acha que é o responsável por esse sistema?" (Por exemplo: empresa, empreendedor, marca, etc)**
+
+> “Acho que esse tipo de sistema é parceria público-privada, mas quem se responsabiliza é instituições filantrópicas sem fins lucrativos que promovem cuidado com o animal." 
+
+
+## Cenário
+
+Você está em busca de uma plataforma centralizada que lhe permita procurar animais para adotar e/ou compartilhar animais que tenha encontrado perdidos na rua para que encontrem seus respectivos donos.
+
+
+### Tarefa 1 — Cadastro no sistema
+
+É a sua primeira vez usando o sistema, é preciso cadastrar-se. Acesse esse menu e preencha os campos para realizar seu cadastro.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Criar conta'; preencher e-mail válido e senha; completar dados pessoais; clicar em criar conta. |
+| **Sucesso na execução** | ✅ **1 — Completou com dificuldade ou ajuda** |
+| **Anotações / Observações** | A usuária na página de acesso ao site, teve dificuldades, porque ficou confuso a questão de login e cadastro. Poucas informações para poder diferenciar essas duas páginas. Poderia ter algo que confirmasse que realmente é um cadastro como por exemplo: Confirmar senha e Email criado. A página de criar perfil estabelece um limite menor em relação aos números e pontuação do CPF. |
+
+
+
+### Tarefa 2 — Login na plataforma
+
+Faça login na plataforma usando o e-mail cadastrado.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Log in'; preencher os campos 'E-mail' e 'senha'; clicar em 'Log in'; acessar a página inicial da conta. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | A usuária efetuou o login na plataforma sem dificuldades. |
+
+
+
+### Tarefa 3 — Busca por animal para adoção
+
+Busque por um animal que queira adotar; use os filtros da plataforma para realizar sua busca.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'Animais'; buscar por termo geral como "Gato" ou "Cachorro"; filtrar um tipo de raça; filtrar a localização; filtrar por porte; filtrar a cor da pelagem. |
+| **Sucesso na execução** | ✅ **1 — Completou com dificuldade ou ajuda** |
+| **Anotações / Observações** | A usuária teve dificuldade para encontrar o filtro de busca do animal para adoção. Não teve clareza em relação a identificar onde está a opção de Filtro.  |
+
+
+
+### Tarefa 4 — Acesso à página de uma ONG próxima
+
+Acesse a página de uma ONG que esteja mais próxima da sua localização.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Abrir o menu 'ONGs'; filtrar por localização; acessar a página da ONG mais próxima. |
+| **Sucesso na execução** | ❌ **0 — Não completou** |
+| **Anotações / Observações** | Não foi possível completar a tarefa, pois não está acessível o link para a página das ONGs. |
+
+
+
+### Tarefa 5 — Cadastro de animal perdido
+
+Imagine que você encontrou um animalzinho perdido e quer divulgar para encontrar os donos. Faça o cadastro desse animal para divulgá-lo na plataforma.
+
+| Campo | Detalhes |
+|---|---|
+| **Caminho(s)** | Clicar sobre o ícone do perfil, abrindo o menu drawer; clicar em 'Gerenciar animais'; clicar em 'Divulgar animal'; preencher os dados; clicar em 'Publicar'. |
+| **Sucesso na execução** | ✅ **2 — Completou facilmente** |
+| **Anotações / Observações** | A usuária conseguiu realizar a tarefa facilmente. |
+
+
+
+## Questionário Final
+
+**Qual foi a sua impressão geral do sistema?**
+
+> "Tive uma boa impressão do sistema em geral, mas falta clareza e organização de detalhes que faça ser mais interativo e direto.” 
+
+
+
+**Qual foi a sua impressão sobre as atividades propostas?**
+
+> “As atividades propostas que estão boas, mas precisam de correções em alguns detalhes.” 
+
+
+
+**Você acha que este sistema é atual? Por quê?**
+
+> “Sim, pois agora o animal é visto com mais atenção pelos órgãos privado e público, que garantem aos animais proteção.” 
+
+
+
+**O que você mais gostou neste sistema?**
+
+> “Gostei da proposta e da possibilidade de apoiar e conhecer uma questão tão necessária e essencial para o bem-estar do animal e, de uma certa forma, da sociedade como um todo.” 
+
+
+
+**O que você menos gostou neste sistema?**
+
+> “Algumas partes merecem atenção para serem melhoradas para que o usuário que acesse o site possa não ter dúvidas para navegar e que se sinta mais atraído.” 
+
+
+
+**Há alguma coisa que você acha que está faltando neste sistema? (Por exemplo: conteúdo, funções, etc.)**
+
+> “Acredito que falta localização das ONGs ou empresas parceiras utilizando Google Maps, onde o usuário que queiram adotar usando as informações da página saiba mais detalhes da distância.” 
+
+
+
+**Se você fosse descrever este sistema para um colega em uma sentença ou duas, o que você diria?**
+
+> "“Este site é um canal que permite adoções e divulgações de animais que precisam de abrigo.” 
+
+
+
+**Você gostaria de fazer algum comentário final ou pergunta?**
+
+> “Como o site vai garantir que os cuidados com o animal serão realizados após a adoção? Como será avaliado a pessoa interessada para adotar? Se a pessoa quiser devolver o animal por não adaptação e entrar em contato com o site, qual será a posição e ação do site e das empresas parceiras? Enfim, esse tipo de site é importante para que menos animais vivam em situações de vulnerabilidade.” 
+
+
+
+## Conclusões do Avaliador
+
+O teste com o usuário demonstrou que o sistema da UniPets está bem estruturado e atende a proposta do projeto. A interação da participante com a interface em alguns detalhes, teve dificuldades. Mostrou que o sistema ainda precisa ajustes visuais para facilitar uma melhor interação aos usuários. De modo geral foi uma avaliação positiva. 
+
+---
+
 ## Testes com o usuário 5
 
 **Nome do Avaliador:** Verônica Costa Souza
