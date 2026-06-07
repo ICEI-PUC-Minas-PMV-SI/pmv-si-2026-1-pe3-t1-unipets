@@ -1,10 +1,6 @@
 # 5. PLANO DE TESTES DE SOFTWARE
    
-Nesta etapa devem ser realizados dois tipos de avaliação: por observação de sessão de uso (teste com usuários) e por inspeção (avaliação heurística, realizada pelos especialistas em usabilidade). Foram disponibilizados em "Material de Apoio" modelos para o registro dos testes que deverão ser realizados da seguinte maneira:
-•	Na avaliação heurística, cada integrante do grupo deverá preencher a planilha correspondente ao teste (arquivo Avaliação_Heurística.xlsx). Ao final, os resultados deverão ser compilados em arquivo único de mesmo formato.
-•	Na avaliação por observação de sessão de uso, deverão ser definidas tarefas em quantidade igual ao número de integrantes do grupo (ex.: grupo com 5 integrantes, 5 tarefas) e documentadas no relatório de testes com usuário (arquivo Relatório_de_Testes_com_Usuário.docx). Cada integrante do grupo deverá realizar o teste com um usuário distinto (ex.: grupo com 5 integrantes, 5 usuários deverão ser escolhidos, um por cada membro, para a realização dos testes).
-
-Ao final, os relatórios gerados por cada membro deverão ser disponibilizados aqui, juntamente com a planilha consolidada da avaliação heurística.
+Nesta etapa foram realizados dois tipos de avaliação: por inspeção (avaliação heurística) e por observação de sessão de uso (teste com usuários).
 
 Material de apoio para esta etapa:
 
@@ -13,6 +9,13 @@ Material de apoio para esta etapa:
 [Relatório_de_Testes_com_Usuário.docx](https://github.com/user-attachments/files/16501456/Relatorio_de_Testes_com_Usuario.docx)
 
 [Relatório_de_Testes_com_Usuário_exemplo.docx](https://github.com/user-attachments/files/16501459/Relatorio_de_Testes_com_Usuario_exemplo.docx)
+
+# Avaliação Heurística
+
+| Número | Título da Heurística | Descrição da Heurística | Problemas encontrados | Sugestões |
+|---|---|---|---|---|
+| **1** | **Visibilidade do status do sistema** | O sistema sempre deve manter os usuários informados sobre o que está acontecendo, por meio de feedback apropriado dentro de um prazo razoável. | 1) O menu ‘Criar animal’ não permite visualizar prévia da foto carregada; 2) Ainda no mesmo menu, ao finalizar o cadastro de um novo animal, a janela não se fecha ao concluir o processo, mesmo que tenha sido efetivado, o que pode levar o usuário a pensar que não deu certo e a inserir os mesmos dados novamente; 3) Em ‘Editar perfil’, ainda não é possível alterar a foto de perfil; 4) Também em ‘Editar perfil’, o sistema não retorna mensagem de sucesso ao realizar as alterações solicitadas; 5) Os menus superiores, ao serem selecionados, apresentam o respectivo nome no topo da página, mas não acusam que foram selecionados. | 1) Corrigir erro no menu ‘Criar animal’, permitindo visualização prévia da foto carregada; 2) Corrigir erro ao inserir/alterar foto de perfil; 3) Incluir mensagens de sucesso ou erro ao final de processos de cadastros e alterações; 4) Ao selecionar um menu da barra superior, manter esse menu aparentando estar selecionado em detrimento dos demais. 
+
 
 # Relatórios de Testes com Usuários
 
