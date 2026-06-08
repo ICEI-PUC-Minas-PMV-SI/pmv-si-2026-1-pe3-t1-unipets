@@ -2,13 +2,7 @@
    
 Nesta etapa foram realizados dois tipos de avaliação: por inspeção (avaliação heurística) e por observação de sessão de uso (teste com usuários).
 
-Material de apoio para esta etapa:
 
-[Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/16501461/Avaliacao_Heuristica.xlsx) 
-
-[Relatório_de_Testes_com_Usuário.docx](https://github.com/user-attachments/files/16501456/Relatorio_de_Testes_com_Usuario.docx)
-
-[Relatório_de_Testes_com_Usuário_exemplo.docx](https://github.com/user-attachments/files/16501459/Relatorio_de_Testes_com_Usuario_exemplo.docx)
 
 # Avaliação Heurística
 
@@ -511,13 +505,12 @@ Imagine que você encontrou um animal perdido e quer divulgar para encontrar os 
 
 ## Conclusões do Avaliador
 
-
 O participante compreendeu rapidamente a proposta do UniPets e conseguiu executar a maior parte das tarefas sem necessidade de auxílio. Os fluxos de navegação principais mostraram-se intuitivos, especialmente nas funcionalidades de login, busca de informações e divulgação de animais. As principais dificuldades observadas estiveram relacionadas ao preenchimento do formulário de cadastro e à interpretação de alguns filtros de busca, em especial o filtro de peso, que gerou dúvidas quanto ao seu funcionamento. Também foi identificada a ausência da funcionalidade de localização de ONGs próximas, o que impossibilitou a conclusão da Tarefa 4.
 
 De forma geral, o participante avaliou positivamente a plataforma, destacando como principal diferencial a centralização de informações sobre adoção, ONGs e conteúdo relacionado ao bem-estar animal em um único ambiente. Como sugestões de melhoria, foram mencionadas funcionalidades como sistema de favoritos, notificações e aprimoramentos em alguns elementos da interface.
 
 Os resultados indicam que o UniPets possui boa usabilidade e atende adequadamente aos objetivos propostos, embora ainda existam oportunidades de melhoria relacionadas à experiência do usuário.
----
+
 
 ## Testes com o usuário 4
 
