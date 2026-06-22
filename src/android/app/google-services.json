@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784736587875",
+    "project_id": "unipets-e796e",
+    "storage_bucket": "unipets-e796e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784736587875:android:fcb37c1c8670acc0efa856",
+        "android_client_info": {
+          "package_name": "com.mycompany.unipetspuc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-nKIHd07gKNqMS0gSoZoJ0dUcY_VNKjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

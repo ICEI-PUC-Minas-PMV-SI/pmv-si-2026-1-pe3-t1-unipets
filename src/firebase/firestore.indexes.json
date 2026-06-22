@@ -1,0 +1,32 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "animais",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "especie",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "nome",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "usuarios",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tipo",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_name",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}
